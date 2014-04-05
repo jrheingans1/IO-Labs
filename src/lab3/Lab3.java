@@ -24,7 +24,7 @@ import java.util.Scanner;
 public class Lab3 {
 
     public static void main(String[] args) throws IOException {
-        Scanner keyboard = new Scanner(System.in);
+//        Scanner keyboard = new Scanner(System.in);
 
         File data = new File(File.separatorChar + "temp" + File.separatorChar + "lab1.txt");
 //        boolean append = true;   // you can change this
