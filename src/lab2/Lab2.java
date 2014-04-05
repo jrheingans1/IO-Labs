@@ -51,13 +51,37 @@ public class Lab2 {
         try {
             in = new BufferedReader(new FileReader(data));
             String line = in.readLine();
-            int counter = 0;
+            int counter = 1;
             if (input.equals("1")) {
                 while (line != null) {
-                    if (counter >= 0 && counter < 8) {
+                    if (counter > 0 && counter < 9) {
                         fileContents.add(line);
                     }
                     line = in.readLine();  // strips out any carriage return chars
+                    counter++;
+                }
+            }else if (input.equals("2")){
+                while (line != null){
+                    if (counter > 9 && counter < 18){
+                        fileContents.add(line);
+                    }
+                    line = in.readLine();
+                    counter++;
+                }
+            }else if (input.equals("3")){
+                while (line != null){
+                    if (counter > 18 && counter < 27){
+                        fileContents.add(line);
+                    }
+                    line = in.readLine();
+                    counter++;
+                }
+            }else if (input.equals("4")){
+                while (line != null){
+                    if (counter > 27 && counter < 36){
+                        fileContents.add(line);
+                    }
+                    line = in.readLine();
                     counter++;
                 }
             }
